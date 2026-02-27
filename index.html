@@ -13,7 +13,7 @@ body{
     color:#fff;
 }
 
-/* ===== BRAND HEADER ===== */
+/* ===== HEADER ===== */
 header{
     background:linear-gradient(90deg,#000,#3a2b00);
     padding:20px;
@@ -30,34 +30,29 @@ header p{
     font-size:15px;
 }
 
-/* ===== TOP MOVING SLIDER (LEFT ↔ RIGHT) ===== */
+/* ===== TOP SLIDER ===== */
 .slider{
     width:100%;
     height:280px;
     overflow:hidden;
-    position:relative;
     background:#000;
 }
-
 .slider-track{
     display:flex;
     width:500%;
     animation: moveLR 40s ease-in-out infinite alternate;
 }
-
 .slider img{
     width:100%;
     height:280px;
     object-fit:cover;
 }
-
-/* LEFT ↔ RIGHT CONTINUOUS */
 @keyframes moveLR{
-    0%{ transform:translateX(0); }
-    100%{ transform:translateX(-400%); }
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-400%);}
 }
 
-/* ===== STATIC IMAGE GRID (2 PER ROW) ===== */
+/* ===== STATIC IMAGES ===== */
 .static-gallery{
     padding:15px;
     display:grid;
@@ -121,7 +116,7 @@ button{
 }
 button:hover{background:#e6c200;}
 
-/* ===== CONTACT BUTTONS ===== */
+/* ===== BUTTONS ===== */
 .buttons{
     display:flex;
     gap:15px;
@@ -150,13 +145,13 @@ footer{
 
 <body>
 
-<!-- BRAND NAME -->
+<!-- BRAND -->
 <header>
 <h1>VERIFIED VIRGIN BOY HAIRS</h1>
 <p>Known for All-Round Premium Human Hair of All Categories</p>
 </header>
 
-<!-- 5 CONTINUOUS MOVING IMAGES -->
+<!-- MOVING IMAGES -->
 <div class="slider">
   <div class="slider-track">
     <img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092051.jpg">
@@ -167,7 +162,7 @@ footer{
   </div>
 </div>
 
-<!-- STATIC IMAGES (2 PER LINE) -->
+<!-- STATIC IMAGES -->
 <div class="static-gallery">
 <img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092139.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092249.jpg">
@@ -179,7 +174,90 @@ footer{
 <img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092726.jpg">
 </div>
 
+<!-- ORDER COLUMNS -->
+<div class="container">
+<h2 class="section-title">Place Your Order</h2>
+<p class="power-text">100% Original • Luxury Grade • Trusted Nationwide</p>
+
+<form onsubmit="sendWhatsApp(); return false;">
+<label>Customer Name</label>
+<input id="name" required>
+
+<label>Phone Number</label>
+<input id="phone" required>
+
+<label>Customer Type</label>
+<select id="customerType">
+<option>New Customer</option>
+<option>Old Customer</option>
+</select>
+
+<label>Product Name</label>
+<select id="product">
+<option>Virgin Boy Hair</option>
+<option>Raw Human Hair</option>
+<option>Bone Straight</option>
+<option>Curly Hair</option>
+<option>Custom Hair</option>
+</select>
+
+<label>Hair Color</label>
+<select id="colorName">
+<option>Natural Black</option>
+<option>Brown</option>
+<option>Blonde</option>
+<option>Custom</option>
+</select>
+
+<label>Exact Color</label>
+<input type="color" id="color">
+
+<label>Inches</label>
+<select id="inches">
+<option>12</option><option>16</option><option>20</option>
+<option>24</option><option>30</option>
+</select>
+
+<label>Date Needed</label>
+<input type="date" id="date">
+
+<label>Installation Needed?</label>
+<select id="install"><option>Yes</option><option>No</option></select>
+
+<label>Branding Needed?</label>
+<select id="branding"><option>Yes</option><option>No</option></select>
+
+<button type="submit">Send Order via WhatsApp</button>
+</form>
+
+<div class="buttons">
+<a class="call" href="tel:08139022511">📞 Call Now</a>
+<a class="whatsapp" href="https://wa.me/2348139022511?text=Hello%20VERIFIED%20VIRGIN%20BOY%20HAIRS%20👋%0AI%20visited%20your%20official%20website%20and%20I%20am%20highly%20interested%20in%20your%20premium%20Virgin%20Boy%20Human%20Hair.%0AI%20want%20to%20place%20a%20serious%20order%20and%20get%20full%20details%20immediately.">💬 WhatsApp</a>
+</div>
+</div>
+
 <footer>© 2026 VERIFIED VIRGIN BOY HAIRS</footer>
+
+<script>
+function sendWhatsApp(){
+let msg = `Hello VERIFIED VIRGIN BOY HAIRS 👋
+I visited your official website and I am highly interested in your premium Virgin Boy Human Hair.
+
+Name: ${name.value}
+Phone: ${phone.value}
+Customer Type: ${customerType.value}
+Product: ${product.value}
+Color: ${colorName.value}
+Inches: ${inches.value}
+Date Needed: ${date.value}
+Installation: ${install.value}
+Branding: ${branding.value}
+
+Please respond urgently.`;
+
+window.open("https://wa.me/2348139022511?text="+encodeURIComponent(msg));
+}
+</script>
 
 </body>
 </html>
