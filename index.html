@@ -13,15 +13,53 @@ body{
     color:#fff;
 }
 
+/* ===== SLIDER ===== */
+.slider{
+    position:relative;
+    width:100%;
+    height:320px;
+    overflow:hidden;
+}
+
+.slides{
+    display:flex;
+    width:1300%;
+    animation: slide 60s infinite;
+}
+
+.slides img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+@keyframes slide{
+    0%{transform:translateX(0);}
+    7%{transform:translateX(0);}
+    14%{transform:translateX(-100%);}
+    21%{transform:translateX(-200%);}
+    28%{transform:translateX(-300%);}
+    35%{transform:translateX(-400%);}
+    42%{transform:translateX(-500%);}
+    49%{transform:translateX(-600%);}
+    56%{transform:translateX(-700%);}
+    63%{transform:translateX(-800%);}
+    70%{transform:translateX(-900%);}
+    77%{transform:translateX(-1000%);}
+    84%{transform:translateX(-1100%);}
+    91%{transform:translateX(-1200%);}
+}
+
+/* ===== HEADER ===== */
 header{
     background:linear-gradient(90deg, #000, #3a2b00);
-    padding:25px;
+    padding:20px;
     text-align:center;
 }
 
 header h1{
     margin:0;
-    font-size:30px;
+    font-size:28px;
     color:gold;
     letter-spacing:2px;
 }
@@ -31,6 +69,7 @@ header p{
     color:#ddd;
 }
 
+/* ===== FORM ===== */
 .container{
     max-width:900px;
     margin:auto;
@@ -40,8 +79,15 @@ header p{
 .section-title{
     text-align:center;
     font-size:22px;
-    margin-bottom:15px;
+    margin-bottom:10px;
     color:gold;
+}
+
+.power-text{
+    text-align:center;
+    font-size:16px;
+    color:#ccc;
+    margin-bottom:20px;
 }
 
 form{
@@ -53,7 +99,7 @@ form{
 
 label{
     display:block;
-    margin-top:15px;
+    margin-top:14px;
     font-weight:bold;
 }
 
@@ -63,7 +109,6 @@ input, select{
     margin-top:6px;
     border-radius:6px;
     border:none;
-    outline:none;
 }
 
 input[type="color"]{
@@ -72,7 +117,7 @@ input[type="color"]{
 
 button{
     width:100%;
-    padding:14px;
+    padding:15px;
     margin-top:25px;
     background:gold;
     border:none;
@@ -86,6 +131,7 @@ button:hover{
     background:#e6c200;
 }
 
+/* ===== BUTTONS ===== */
 .buttons{
     display:flex;
     gap:15px;
@@ -102,13 +148,8 @@ button:hover{
     color:white;
 }
 
-.call{
-    background:#007bff;
-}
-
-.whatsapp{
-    background:#25D366;
-}
+.call{ background:#007bff; }
+.whatsapp{ background:#25D366; }
 
 footer{
     text-align:center;
@@ -121,116 +162,81 @@ footer{
 
 <body>
 
+<!-- MOVING IMAGES -->
+<div class="slider">
+<div class="slides">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092051.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250415-155816.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250415-155746.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092108.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092123.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092139.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092249.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092303.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092312.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092426.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092528.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092537.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/VERIFIED-VIRGIN-BOY-HAIRS/40aa575e4172d5ddcc2af28a007e91efa5b8fdd7/Screenshot_20250505-092726.jpg">
+</div>
+</div>
+
 <header>
 <h1>VERIFIED VIRGIN BOY HAIRS</h1>
-<p>Known for All-Round Human Hairs of All Categories</p>
+<p>Trusted Supplier of Premium Virgin Human Hair – All Categories</p>
 </header>
 
 <div class="container">
-
-<h2 class="section-title">Place Your Hair Order</h2>
+<h2 class="section-title">Book & Order With Confidence</h2>
+<p class="power-text">
+Pure • Original • Long-Lasting • Luxury Grade  
+<br>Trusted by Professionals & Hair Lovers Nationwide
+</p>
 
 <form onsubmit="sendWhatsApp(); return false;">
-
-<label>Customer Name</label>
-<input type="text" id="name" required>
-
-<label>Phone Number</label>
-<input type="tel" id="phone" required>
-
+<label>Name</label><input id="name" required>
+<label>Phone</label><input id="phone" required>
 <label>Customer Type</label>
-<select id="customerType">
-<option>New Customer</option>
-<option>Old Customer</option>
-</select>
-
-<label>Product Name</label>
-<select id="product">
-<option>Virgin Boy Hair</option>
-<option>Raw Human Hair</option>
-<option>Bone Straight</option>
-<option>Body Wave</option>
-<option>Curly Hair</option>
-<option>Custom Hair</option>
-</select>
-
-<label>Hair Color (Select)</label>
-<select id="colorName">
-<option>Natural Black</option>
-<option>Brown</option>
-<option>Blonde</option>
-<option>Ginger</option>
-<option>Custom Color</option>
-</select>
-
-<label>Pick Exact Color (Optional)</label>
-<input type="color" id="color">
-
-<label>Hair Inches</label>
-<select id="inches">
-<option>10 Inches</option>
-<option>12 Inches</option>
-<option>14 Inches</option>
-<option>16 Inches</option>
-<option>18 Inches</option>
-<option>20 Inches</option>
-<option>22 Inches</option>
-<option>24 Inches</option>
-<option>26 Inches</option>
-<option>30 Inches</option>
-</select>
-
-<label>Date Needed</label>
-<input type="date" id="date">
-
-<label>Installation Needed?</label>
-<select id="install">
-<option>Yes</option>
-<option>No</option>
-</select>
-
-<label>Branding Needed?</label>
-<select id="branding">
-<option>Yes</option>
-<option>No</option>
-</select>
-
-<button type="submit">Submit Order via WhatsApp</button>
-
+<select id="customerType"><option>New Customer</option><option>Old Customer</option></select>
+<label>Product</label>
+<select id="product"><option>Virgin Boy Hair</option><option>Raw Hair</option><option>Bone Straight</option><option>Curly</option></select>
+<label>Hair Color</label>
+<select id="colorName"><option>Natural Black</option><option>Brown</option><option>Blonde</option><option>Custom</option></select>
+<label>Exact Color</label><input type="color" id="color">
+<label>Inches</label>
+<select id="inches"><option>12</option><option>16</option><option>20</option><option>24</option><option>30</option></select>
+<label>Date Needed</label><input type="date" id="date">
+<label>Installation</label><select id="install"><option>Yes</option><option>No</option></select>
+<label>Branding</label><select id="branding"><option>Yes</option><option>No</option></select>
+<button type="submit">Send Order via WhatsApp</button>
 </form>
 
 <div class="buttons">
-<a href="tel:08139022511" class="call">📞 Call Now</a>
-<a href="https://wa.me/2348139022511?text=I%20saw%20your%20VERIFIED%20VIRGIN%20BOY%20HAIRS%20website%20and%20I%20want%20to%20place%20an%20order." class="whatsapp">💬 WhatsApp</a>
+<a class="call" href="tel:08139022511">📞 Call Now</a>
+<a class="whatsapp" href="https://wa.me/2348139022511?text=Hello%20VERIFIED%20VIRGIN%20BOY%20HAIRS%20👋%0AI%20visited%20your%20official%20website%20and%20I%20am%20highly%20interested%20in%20your%20premium%20Virgin%20Boy%20Human%20Hair.%0AI%20want%20to%20place%20a%20serious%20order%20and%20get%20full%20details%20immediately.">💬 WhatsApp</a>
+</div>
 </div>
 
-</div>
-
-<footer>
-© 2026 VERIFIED VIRGIN BOY HAIRS — Premium Human Hair Supply
-</footer>
+<footer>© 2026 VERIFIED VIRGIN BOY HAIRS</footer>
 
 <script>
 function sendWhatsApp(){
-    let msg = 
-`VERIFIED VIRGIN BOY HAIRS ORDER
+let msg=`Hello VERIFIED VIRGIN BOY HAIRS 👋
+I visited your official website and I am highly interested in your premium Virgin Boy Human Hair.
 
 Name: ${name.value}
 Phone: ${phone.value}
-Customer Type: ${customerType.value}
-
+Customer: ${customerType.value}
 Product: ${product.value}
-Color Name: ${colorName.value}
-Exact Color: ${color.value}
+Color: ${colorName.value}
 Inches: ${inches.value}
-
 Date Needed: ${date.value}
 Installation: ${install.value}
 Branding: ${branding.value}
 
-Message sent from website`;
+Please respond urgently.`;
 
-    window.open("https://wa.me/2348139022511?text="+encodeURIComponent(msg));
+window.open("https://wa.me/2348139022511?text="+encodeURIComponent(msg));
 }
 </script>
 
