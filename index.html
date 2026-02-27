@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VERIFIED VIRGIN BOY HAIRS</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b0b0b;
+    color:#fff;
+}
+
+header{
+    background:linear-gradient(90deg, #000, #3a2b00);
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:30px;
+    color:gold;
+    letter-spacing:2px;
+}
+
+header p{
+    font-size:15px;
+    color:#ddd;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:22px;
+    margin-bottom:15px;
+    color:gold;
+}
+
+form{
+    background:#141414;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(255,215,0,0.2);
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    border-radius:6px;
+    border:none;
+    outline:none;
+}
+
+input[type="color"]{
+    height:45px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:25px;
+    background:gold;
+    border:none;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e6c200;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.call, .whatsapp{
+    flex:1;
+    text-align:center;
+    padding:15px;
+    border-radius:8px;
+    font-weight:bold;
+    text-decoration:none;
+    color:white;
+}
+
+.call{
+    background:#007bff;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>VERIFIED VIRGIN BOY HAIRS</h1>
+<p>Known for All-Round Human Hairs of All Categories</p>
+</header>
+
+<div class="container">
+
+<h2 class="section-title">Place Your Hair Order</h2>
+
+<form onsubmit="sendWhatsApp(); return false;">
+
+<label>Customer Name</label>
+<input type="text" id="name" required>
+
+<label>Phone Number</label>
+<input type="tel" id="phone" required>
+
+<label>Customer Type</label>
+<select id="customerType">
+<option>New Customer</option>
+<option>Old Customer</option>
+</select>
+
+<label>Product Name</label>
+<select id="product">
+<option>Virgin Boy Hair</option>
+<option>Raw Human Hair</option>
+<option>Bone Straight</option>
+<option>Body Wave</option>
+<option>Curly Hair</option>
+<option>Custom Hair</option>
+</select>
+
+<label>Hair Color (Select)</label>
+<select id="colorName">
+<option>Natural Black</option>
+<option>Brown</option>
+<option>Blonde</option>
+<option>Ginger</option>
+<option>Custom Color</option>
+</select>
+
+<label>Pick Exact Color (Optional)</label>
+<input type="color" id="color">
+
+<label>Hair Inches</label>
+<select id="inches">
+<option>10 Inches</option>
+<option>12 Inches</option>
+<option>14 Inches</option>
+<option>16 Inches</option>
+<option>18 Inches</option>
+<option>20 Inches</option>
+<option>22 Inches</option>
+<option>24 Inches</option>
+<option>26 Inches</option>
+<option>30 Inches</option>
+</select>
+
+<label>Date Needed</label>
+<input type="date" id="date">
+
+<label>Installation Needed?</label>
+<select id="install">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Branding Needed?</label>
+<select id="branding">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<button type="submit">Submit Order via WhatsApp</button>
+
+</form>
+
+<div class="buttons">
+<a href="tel:08139022511" class="call">📞 Call Now</a>
+<a href="https://wa.me/2348139022511?text=I%20saw%20your%20VERIFIED%20VIRGIN%20BOY%20HAIRS%20website%20and%20I%20want%20to%20place%20an%20order." class="whatsapp">💬 WhatsApp</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 VERIFIED VIRGIN BOY HAIRS — Premium Human Hair Supply
+</footer>
+
+<script>
+function sendWhatsApp(){
+    let msg = 
+`VERIFIED VIRGIN BOY HAIRS ORDER
+
+Name: ${name.value}
+Phone: ${phone.value}
+Customer Type: ${customerType.value}
+
+Product: ${product.value}
+Color Name: ${colorName.value}
+Exact Color: ${color.value}
+Inches: ${inches.value}
+
+Date Needed: ${date.value}
+Installation: ${install.value}
+Branding: ${branding.value}
+
+Message sent from website`;
+
+    window.open("https://wa.me/2348139022511?text="+encodeURIComponent(msg));
+}
+</script>
+
+</body>
+</html>
